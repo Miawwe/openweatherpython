@@ -7,7 +7,7 @@ for i in range(10):
     temp_c = float(json_object["main"]["temp"])-273.15
     pressure = float(json_object["main"]["pressure"])
     wind_speed = float(json_object["wind"]["speed"])
-    wind_dir = int(float(json_object["wind"]["deg"]))
+    wind_dir = int((json_object["wind"]["deg"])
 
     if wind_dir >= 348 and wind_dir <= 11:
         cardinal = "N"
